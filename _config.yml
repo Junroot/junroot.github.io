@@ -25,7 +25,7 @@ url                      : "https://junroot.github.io"
 baseurl                  : "/blog"
 repository               : "Junroot/blog"
 teaser                   : "/assets/images/teaser.png"
-logo                     : "/assets/images/profile.png"
+logo                     : 
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Junroot"
-  avatar           : "/assets/images/profile.jpg"
+  avatar           : "/assets/images/profile.png"
   bio              : "I'm not groot.🤔"
   location         : "Somewhere, Korea"
   email            : "junroot0909@gmail.com"
