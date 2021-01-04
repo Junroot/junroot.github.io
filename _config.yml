@@ -99,9 +99,6 @@ author:
   location         : "Somewhere, Korea"
   email            : "junroot0909@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:junroot0909@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Junroot"
