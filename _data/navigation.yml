@@ -5,13 +5,15 @@ main:
   - title: "About"
     url: /about/
   - title: "Posts"
-    url: /posts/
+    url: /posts/all/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
 
 categories:
+    - title: "All"
+      url: /posts/all/
     - title: "Programming"
       url: /posts/programming/
     - title: "Hobby"

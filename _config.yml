@@ -244,12 +244,14 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       show_date: true
       comments: true
       share: true
-      related: true
+      related: false
+      sidebar:
+        nav: "categories"
   # _pages
   - scope:
       path: ""
