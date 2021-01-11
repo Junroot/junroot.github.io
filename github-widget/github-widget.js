@@ -33,14 +33,21 @@ Released under the MIT licence: http://opensource.org/licenses/mit-license
     limit = parseInt(opts.limit) || 2e308;
     made = 0;
     ref = payloadData.sort(function(a, b) {
-      return a[sortBy] - b[sortBy];
+      if (a[sortBy] > b[sortBy]) {
+        return -1;
+      } else if (a[sortBy] == b[sortBy]) return 0;
+      return 1;
     });
     results = [];
     for (j = 0, len = ref.length; j < len; j++) {
       repo = ref[j];
-      if ((!opts.forks && repo.fork) || (ref1 = repo.name.toLowerCase(), indexOf.call(siteRepoNames, ref1) >= 0) || !repo.description) {
-        continue;
+      // if ((!opts.forks && repo.fork) || (ref1 = repo.name.toLowerCase(), indexOf.call(siteRepoNames, ref1) >= 0) || !repo.description) {
+      //   continue;
+      // }
+      if (!repo.description) {
+        repo.description = "";
       }
+      console.log(limit);
       if (made++ === limit) {
         break;
       }
@@ -54,21 +61,7 @@ Released under the MIT licence: http://opensource.org/licenses/mit-license
               make({
                 cls: 'gw-title',
                 kids: [
-                  make({
-                    tag: 'ul',
-                    cls: 'gw-stats',
-                    kids: [
-                      make({
-                        tag: 'li',
-                        text: repo.watchers,
-                        cls: 'gw-watchers'
-                      }), make({
-                        tag: 'li',
-                        text: repo.forks,
-                        cls: 'gw-forks'
-                      })
-                    ]
-                  }), make({
+                  , make({
                     tag: 'a',
                     href: repo.html_url,
                     text: repo.name,
