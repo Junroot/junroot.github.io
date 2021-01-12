@@ -6,18 +6,37 @@
   clear: left;
 } */
 .gw-repo {
-  padding: 0.5em 0;
-  margin: 0 0 1.5em 0;
+  /* padding: 0.5em 0; */
+  position: relative;
+  margin: 0 0 0 0;
 }
 
 .gw-repo-desc {
   font-size: 0.75em;
 }
 
+.gw-title {
+  margin: 2.0em 0 0;
+}
+
 .gw-name {
   font-size: 1.25em;
   font-weight: bold;
 }
+
+.gw-repo a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.gw-repo a {
+  z-index: 10;
+}
+
 .gw-stats {
   display: inline-block;
   margin: 0;
@@ -36,10 +55,15 @@
 .gw-forks {
   background-position: 5px -52px;
 }
-.gw-lang {
+.gw-lang, .gw-updated-at {
   font-size: 0.6em;
-  color: #777;
+  margin: 0 0 4px 0.3em;
 }
+
 .gw-clearer {
   clear: left;
+}
+
+.repo-icon, .repo-sep {
+  font-size: 0.6em;
 }

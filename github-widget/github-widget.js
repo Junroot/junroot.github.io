@@ -56,6 +56,7 @@ Released under the MIT licence: http://opensource.org/licenses/mit-license
         cls: 'gw-repo-outer',
         kids: [
           make({
+            tag: 'article',
             cls: 'gw-repo',
             kids: [
               make({
@@ -68,7 +69,22 @@ Released under the MIT licence: http://opensource.org/licenses/mit-license
                     cls: 'gw-name'
                   })
                 ]
+              }), make({
+                tag: 'i',
+                icon: 'far fa-calendar-alt repo-icon'
+              }), make({
+                tag: 'time',
+                cls: 'gw-updated-at',
+                time: repo.updated_at,
+                text: moment(repo.updated_at).format("MMMM D, YYYY")
               }), repo.language != null ? make({
+                tag: 'span',
+                cls: 'page__meta-sep repo-sep'
+              }) : void 0,repo.language != null ? make({
+                tag: 'i',
+                icon: 'fas fa-code repo-icon'
+              }) : void 0, repo.language != null ? make({
+                tag: 'span',
                 cls: 'gw-lang',
                 text: repo.language
               }) : void 0, make({
@@ -225,6 +241,13 @@ Released under the MIT licence: http://opensource.org/licenses/mit-license
           break;
         case 'cls':
           t.className = v;
+          break;
+        case 'icon':
+          t.className = v;
+          t.setAttribute('aria-hidden', 'true');
+          break;
+        case 'time':
+          t.setAttribute('time', v);
           break;
         default:
           t[k] = v;
