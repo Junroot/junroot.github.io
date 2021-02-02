@@ -1,13 +1,12 @@
 ---
-layout: single
+title: About Junroot
 permalink: /about/
 author_profile: false
-title: About Junroot
 ---
 
 <p align="center"><img src="/assets/images/profile.png"></p>
 
->　I’m not groot.🤔
+>　I’m not groot.
 
 ## Experience
 
