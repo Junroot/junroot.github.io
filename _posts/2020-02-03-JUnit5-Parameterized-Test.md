@@ -5,10 +5,6 @@ tags: JUnit
 classes: wide
 ---
 
-# JUnit5 Parameterized Test
-
-날짜: 2021년 2월 3일
-
 ## Parameterized Test란?
 
 테스트 코드 작성시 각 다른 매개변수들로 한 테스트 메소드를 여러 번 실행해야되는 상황이 발생할 수 있다. 이 때 중복 코드를 발생시키지 않고 여러번 테스트를 구현가능 하도록해주는 것이 Parameterized Test 이다.
