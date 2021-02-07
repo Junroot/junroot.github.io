@@ -33,7 +33,7 @@ public final class DateUtils {
 
 ## Utility Class의 문제점
 
-Utility Class는 근본적으로 절차지향적인 프로그래밍 기법이 아니다. 기능분할에 익숙해져있는 절차적 프로그래밍에 가깝다. 또한, Utility Class는 다른 클래스로부터 종속성이 너무 커지며, 시간이 지남에따라, 기능을 추가하면서 Utility Class의 코드가 커지면서 단일 책임 원칙을 위반하기 될것이다.
+Utility Class는 근본적으로 객체지향적인 프로그래밍 기법이 아니다. 기능분할에 익숙해져있는 절차적 프로그래밍에 가깝다. 또한, Utility Class는 다른 클래스로부터 종속성이 너무 커지며, 시간이 지남에따라, 기능을 추가하면서 Utility Class의 코드가 커지면서 단일 책임 원칙을 위반하기 될것이다.
 
 ## 관련 사이트
 
