@@ -71,4 +71,5 @@ public class UserFactory {
 ## 관련 사이트
 
 <https://johngrib.github.io/wiki/static-factory-method-pattern/>
+
 <https://velog.io/@ljinsk3/정적-팩토리-메서드는-왜-사용할까>

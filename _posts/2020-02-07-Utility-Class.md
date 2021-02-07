@@ -38,4 +38,5 @@ Utility Class는 근본적으로 절차지향적인 프로그래밍 기법이 �
 ## 관련 사이트
 
 <https://www.vojtechruzicka.com/avoid-utility-classes/>
+
 <https://www.mimul.com/blog/oop-alternative-to-utility-classes/>
