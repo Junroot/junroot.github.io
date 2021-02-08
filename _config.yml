@@ -22,8 +22,8 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "Junroot"
 description              : "I'm not groot.🤔"
 url                      : "https://junroot.github.io"
-baseurl                  : "/blog"
-repository               : "Junroot/blog"
+baseurl                  : "/"
+repository               : "Junroot/junroot.github.io"
 teaser                   :
 logo                     : 
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
