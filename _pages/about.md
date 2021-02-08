@@ -4,7 +4,7 @@ author_profile: false
 ---
 
 <p align="center" style="font-size: 3.125rem; margin: 0 0 12px 0">Junroot</p> 
-<p align="center"> <img src="/blog/assets/images/profile.png"> </p>
+<p align="center"> <img src="/assets/images/profile.png"> </p>
 
 >　I’m not groot.
 
@@ -32,7 +32,7 @@ author_profile: false
 
         Currently not working.
 
-        ![iidxcoloringimg](/blog/assets/images/iidxcoloring.png)
+        ![iidxcoloringimg](/assets/images/iidxcoloring.png)
 
 * 2016
 
@@ -48,13 +48,13 @@ author_profile: false
 
         Code to estimate the difficulty of the songs.
 
-        ![iidxleveling](/blog/assets/images/iidxleveling.png)
+        ![iidxleveling](/assets/images/iidxleveling.png)
 
     - IIDX Info ([web](https://iidx.info/), [twitter](https://twitter.com/iidx_info), [code](https://github.com/Junroot/IIDXInfo))
 
         Website to publish information on ☆12's data about 10dan
 
-        ![iidxleveling](/blog/assets/images/iidxinfo.png)
+        ![iidxleveling](/assets/images/iidxinfo.png)
 
 * 2020
 
@@ -64,6 +64,6 @@ author_profile: false
 
         I can't disclose the code because it is a team project.
 
-        ![Noti](/blog/assets/images/Noti.jpeg)
+        ![Noti](/assets/images/Noti.jpeg)
 
 </div>
