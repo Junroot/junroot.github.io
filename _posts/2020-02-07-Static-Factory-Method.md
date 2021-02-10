@@ -1,5 +1,5 @@
 ---
-title:  "Static Factory Method"
+title:  "Static Factory Method (정적 팩토리 메서드)"
 categories: programming
 tags: Java OOP
 classes: wide
