@@ -1,7 +1,7 @@
 ---
-title:  "Stream API"
+title:  "Java Stream API"
 categories: programming
-tags: JAVA
+tags: Java
 classes: wide
 ---
 
