@@ -7,7 +7,7 @@ classes: wide
 
 ## Exception의 상속 구조
 
-![exception-hierarchy](assets/images/exception-hierarchy.png)
+![exception-hierarchy](/assets/images/exception-hierarchy.png)
 
 Exception은 위 그림과 같은 상속 구조를 가지고 있다. 최고의 조상은 `Exception`클래스이며, 모든 예외처리는 이 클래스를 상속받고 있다.
 
