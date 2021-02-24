@@ -117,8 +117,22 @@ try {
 }
 ```
 
+## 표준 예외
+
+자주 사용하는 표준 예외인 `IllegalArgumentException`과 `IllegalStateException`을 소개한다.
+
+- `IllegalArgumentException`: 부적절한 인자를 메소드에게 건네준 것을 나타내는 Exception
+
+- `IllegalSteaException`: 부적절한 상황에 메소드가 호출된 경우를 나타내는 Exception
+
+즉 `IllegalArgumentException`는 메소드를 호출했을 때의 인자 값에 대한 예외, `IllegalSteaException`는 메소드 호출 타이밍에 대한 예외를 나타낸다.
+
+자바로 개발할 때, 커스텀 예외를 만들 것인지 표준 예외를 활용할 것인지에대한 고민을 해볼 수도 있다. 그에 대한 정보는 이 [링크](https://woowacourse.github.io/javable/post/2020-08-17-custom-exception/)를 확인하면 좋다.
+
 ## 참고 자료
 
 [https://5balloons.info/introduction-to-exception-handling/](https://5balloons.info/introduction-to-exception-handling/)
+
+<http://cris.joongbu.ac.kr/course/java/api/java/lang/IllegalArgumentException.html>
 
 우아한테크코스 수업 내용
