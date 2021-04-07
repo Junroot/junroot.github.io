@@ -45,10 +45,10 @@ public void send() throws Exception {
 
 ```jsx
 try {
-		new Student("A");
-		fail("이름이 형식에 맞지 않아 Exception이 발생해야 한다.");
+	new Student("A");
+	fail("이름이 형식에 맞지 않아 Exception이 발생해야 한다.");
 } catch (StudentNameFormatException e) {
-		assertEquals("A 이름은 형식에 맞지 않습니다.", e.getMessage());
+	assertEquals("A 이름은 형식에 맞지 않습니다.", e.getMessage());
 } catch (NoSuchElementException e) {
 
 }
@@ -58,23 +58,21 @@ try {
 
 ```jsx
 try {
-		new Student("A");
-		fail("이름이 형식에 맞지 않아 Exception이 발생해야 한다.");
-} catch (StudentNameFormatException e) {
-		assertEquals("A 이름은 형식에 맞지 않습니다.", e.getMessage());
-} catch (NoSuchElementException e) {
-
-}
+	new Student("A");
+	fail("이름이 형식에 맞지 않아 Exception이 발생해야 한다.");
+} catch (StudentNameFormatException | NoSuchElementException e) {
+	assertEquals("A 이름은 형식에 맞지 않습니다.", e.getMessage());
+} 
 ```
 
 또는
 
 ```jsx
 try {
-		new Student("A");
-    fail("이름이 형식에 맞지 않아 Exception이 발생해야 한다.");
+	new Student("A");
+	fail("이름이 형식에 맞지 않아 Exception이 발생해야 한다.");
 } catch (Exception e) {
-    assertEquals("A 이름은 형식에 맞지 않습니다.", e.getMessage());
+	assertEquals("A 이름은 형식에 맞지 않습니다.", e.getMessage());
 }
 ```
 
@@ -84,9 +82,9 @@ catch안에 다시 Exception을 throw할 수 있다.
 
 ```jsx
 try {
-		new Position("a");
+	new Position("a");
 } catch (InvalidPositionException e) {
-    throw e;
+	throw e;
 }
 ```
 
