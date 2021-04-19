@@ -2,7 +2,6 @@
 title:  "Java StringBuilder, StringBuffer"
 categories: programming
 tags: Java
-classes: wide
 ---
 
 Java 코딩 시 출력과 관련된 부분에서 문자열을 합쳐서 출력해야 되는 경우가 많다. 하지만 이 때 문자열 덧셈으로 처리할 경우 성능이 떨어진다. 메모리 할당과 해제가 발생하기 때문이다.

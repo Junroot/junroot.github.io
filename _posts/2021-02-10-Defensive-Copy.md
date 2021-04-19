@@ -2,7 +2,6 @@
 title:  "Defensive Copy (방어적 복사)"
 categories: programming
 tags: Java OOP
-classes: wide
 ---
 
 ## 방어적 복사란?

@@ -2,7 +2,6 @@
 title:  "Utility Class"
 categories: programming
 tags: Java OOP
-classes: wide
 ---
 
 ## Utility Class란?

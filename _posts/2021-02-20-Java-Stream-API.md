@@ -2,7 +2,6 @@
 title:  "Java Stream API"
 categories: programming
 tags: Java
-classes: wide
 ---
 
 ## Stream(스트림)이란?

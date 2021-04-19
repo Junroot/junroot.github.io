@@ -2,7 +2,6 @@
 title:  "Static Factory Method (정적 팩토리 메서드)"
 categories: programming
 tags: Java OOP
-classes: wide
 ---
 
 ## Static Factory Method란?

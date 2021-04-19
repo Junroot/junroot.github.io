@@ -2,7 +2,6 @@
 title:  "Java Exception"
 categories: programming
 tags: Java
-classes: wide
 ---
 
 ## Exception의 상속 구조

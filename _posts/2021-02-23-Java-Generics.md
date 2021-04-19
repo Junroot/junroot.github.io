@@ -2,7 +2,6 @@
 title:  "Java Generics"
 categories: programming
 tags: Java
-classes: wide
 ---
 
 ## Java Generics(제네릭)이란?

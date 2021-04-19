@@ -2,7 +2,6 @@
 title:  "JUnit5 Parameterized Test"
 categories: programming
 tags: JUnit
-classes: wide
 ---
 
 ## Parameterized Test란?
