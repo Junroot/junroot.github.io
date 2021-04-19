@@ -2,7 +2,6 @@
 title:  "Java의 Exception 전략"
 categories: programming
 tags: Java
-classes: wide
 ---
 
 최근에 Java로 프로젝트를 진행하면서 지금까지 예외를 잘못된 방법으로 사용하고 있었다는 것을 인지했다. Effective Java를 읽은 후 지향해야 될 Exception 전략을 정리해본다.
