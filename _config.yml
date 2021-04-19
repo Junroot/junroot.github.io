@@ -263,6 +263,7 @@ defaults:
       header:
         overlay_image: /assets/images/teaser.png
         overlay_filter: 0.3
+        show_overlay_excerpt: false
       sidebar:
         nav: "categories"
   # _pages
