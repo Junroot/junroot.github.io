@@ -250,7 +250,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: wide
       author_profile: false
       read_time: true
       words_per_minute: 250
@@ -258,6 +258,8 @@ defaults:
       comments: true
       share: true
       related: false
+      toc: true
+      tock_sticky: true
       sidebar:
         nav: "categories"
   # _pages
