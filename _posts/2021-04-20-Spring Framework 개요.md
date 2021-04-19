@@ -6,7 +6,7 @@ tags: Java Spring
 
 ## Spring Framework란?
 
-Java 엔터프라이즈 애플리케이션을 개발할 수 있는 프레임워크다. JVM에서 대체언어로 Groovy 또는 Kotlin을 지원한다. 주로 웹서비스 개발 시 사용되고 있지만, 이외에도 다양한 애플리케이션 개발에서 사용할 수 있다.
+Java 엔터프라이즈 애플리케이션을 개발할 수 있는 프레임워크다. JVM에서 대체언어로 Groovy 또는 Kotlin을 지원한다. 주로 웹서비스 개발 시 사용되고 있지만, 이 외에도 다양한 애플리케이션 개발에서 사용할 수 있다.
 
 ## Spring Boot
 
@@ -21,10 +21,18 @@ Spring Framework는 IoC(Inversion of Control) 컨테이너다. 이름 그대로 
     - 패키지 규정 클래스 이름
     - 빈이 컨테이너에서 작동해야하는 방식을 나타내는 Bean 작동 구성 요소 (스코프, 라이프 사이클 등)
     - 빈이 작업을 수행하는 데 필요한 다른 빈의 참조. 이를 의존성이라 부른다.
-    - 새로 생성된 객체에 설정할 기타 구성 설정 (Connection Pool의 크기, 커넥션의 개수 제한 등)
+    - 새로 생성된 객체에 설정할 기타 구성 설정 (Connection Pool의 zmrl, 커넥션의 개수 제한 등)
+
+## 모듈
+
+Spring Framework는 약 20개의 모듈로 구성된다. 이러한 모듈을 아래와 같이 6개의 그룹으로 나뉜다.
+
+![spring-modules](/assets/images/spring-modules.png)
 
 ## 출처
 
 [https://docs.spring.io/spring-framework/docs/current/reference/html/overview.html#overview](https://docs.spring.io/spring-framework/docs/current/reference/html/overview.html#overview)
+
+[https://docs.spring.io/spring-framework/docs/4.0.x/spring-framework-reference/html/overview.html](https://docs.spring.io/spring-framework/docs/4.0.x/spring-framework-reference/html/overview.html)
 
 [https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#spring-core](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#spring-core)
