@@ -262,7 +262,7 @@ defaults:
       toc_sticky: true
       header:
         overlay_image: /assets/images/teaser.png
-        overlay_filter: 0.5
+        overlay_filter: 0.3
       sidebar:
         nav: "categories"
   # _pages
