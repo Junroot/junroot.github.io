@@ -401,6 +401,50 @@ public class User {
 }
 ```
 
+## 예외
+
+`@Controller`또는 `@ControllerAdvice` 클래스에서 발생하는 예외를 처리하는 메서드를 만들 수 있다.
+
+```java
+@Controller
+public class SimpleController {
+
+    // ...
+
+    @ExceptionHandler
+    public ResponseEntity<String> handle(IOException ex) {
+        // ...
+    }
+}
+```
+
+`IOException`과 같이 예외의 타입으로 처리하고자 하는 에외를 제한할 수 있다. 또는 아래와 같이 어노테이션을 이용할 수도 있다.
+
+```java
+@ExceptionHandler({FileSystemException.class, RemoteException.class})
+public ResponseEntity<String> handle(Exception ex) {
+    // ...
+}
+```
+
+## Controller Advice
+
+일반적으로 `@ExceptionHandler`, `@InitBinder`, `@ModelAttribute`메서드는 `@Controller` 클래스 안에서 정의된다. 만약 컨트롤러 간에 전역적으로 메서드를 정의하고싶으면 `@ControllerAdvice` 또는 `@RestControllerAdvice` 를 사용할 수 있다.
+
+```java
+// Target all Controllers annotated with @RestController
+@ControllerAdvice(annotations = RestController.class)
+public class ExampleAdvice1 {}
+
+// Target all Controllers within specific packages
+@ControllerAdvice("org.example.controllers")
+public class ExampleAdvice2 {}
+
+// Target all Controllers assignable to specific classes
+@ControllerAdvice(assignableTypes = {ControllerInterface.class, AbstractController.class})
+public class ExampleAdvice3 {}
+```
+
 ## 참고 자료
 
 [https://mangkyu.tistory.com/49](https://mangkyu.tistory.com/49)
