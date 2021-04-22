@@ -333,7 +333,7 @@ public void handle(@RequestBody Account account) {
 
 `@HttpEntity` 는 `@RequestBody`와 비슷하지만 헤더도 접근할 수 있다.
 
-### ResponseBody
+### Response body
 
 응답의 body를 직렬화 시킬 수 있다. 직렬화 할때는 Jackson JSON을 사용한다.
 
