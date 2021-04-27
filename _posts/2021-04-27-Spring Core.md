@@ -61,7 +61,7 @@ public class AppConfig  {
 
 ### Customize Scanning Components 
 
-기본적으로, `@Component`와 이를 사용하는 합성 어노테이션(`@Repository`, `@Service`, `@Controller`, `@Configuration` 등)은 컴포넌트로 탐지한다. 만약 스캔하고 싶은 컴포넌트를 수정 또는 확장하고싶다면 `@ComponentScan` 어노테이션을 사용할 수 있다. `@ComponentScan` 어노테이션에 `includeFilters`와 `excludFilters` 속성을 추가하면 된다. 아래는 `filter`의 속성들이다.
+기본적으로, `@ComponentScan` 어노테이션을 붙이면 `@Component`와 이를 사용하는 합성 어노테이션(`@Repository`, `@Service`, `@Controller`, `@Configuration` 등)은 컴포넌트로 탐지한다. 만약 스캔하고 싶은 컴포넌트를 수정 또는 확장하고싶다면 `@ComponentScan` 어노테이션에 `includeFilters`와 `excludFilters` 속성을 추가하면 된다. 아래는 `filter`의 속성들이다.
 
 |filter type|예시|설명|
 |-----|----|----|
