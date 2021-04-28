@@ -12,7 +12,7 @@ Spring JDBC 는 JDBC를 사용할 때 개발자가 처리해야되는 것의 일
 
 - `JdbcTemplate`: 가장 많이 사용되고 고전적인 접근법. 다른 모든 접근 방식도 내부적으로 `JdbcTemplate`를 사용한다.
 - `NamedParameterJdbcTemplate`: `JdbcTemplate`를 래핑하고 있다. JDBC의 `?` placeholder 대신에 이름이 있는 파라미터를 제공한다. 이 접근 방식은 SQL문에 여러 개의 파라미터가 있을 때 더 좋은 문서화와 사용성을 제공해준다.
-- `SimpleJdbcInsert`, `SimpleJdbcCall`: 필요한 구성의 개수를 제한하는 데이터베이스의 메타 데이터를 최적화한다. 이 접근법은 테이블 또는 프로시저의 이름만 제공하고 열 이름과 일치하는 변수 맵을 제공하면되기 때문에 코딩을 단순화 시켜준다. 이는 데이터베이스가 적절한 메타 데이터를 제공하는 경우메나 작동한다. 만약 데이터베이스가 메타 데이터를 제공하지 않으면 너는 파라미터의 명시적인 구성을 제공해야된다.
+- `SimpleJdbcInsert`, `SimpleJdbcCall`: 필요한 구성의 개수를 제한하는 데이터베이스의 메타 데이터를 최적화한다. 이 접근법은 테이블 또는 프로시저의 이름만 제공하고 열 이름과 일치하는 변수 맵을 제공하면되기 때문에 코딩을 단순화 시켜준다. 이는 데이터베이스가 적절한 메타 데이터를 제공하는 경우메나 작동한다. 만약 데이터베이스가 메타 데이터를 제공하지 않으면 파라미터의 명시적인 구성을 제공해야된다.
 - `MappingSqlQuery`, `SqlUpdate`, `StoreProcedure`: 다음과 같은 RDBMS 객체는 data access layer의 초기화 중에 재사용 가능 및 스레드 안전한 객체를 만들어야된다. 이 접근 방식은 쿼리 문자열을 정의하고 매개 변수를 선언하고 쿼리를 컴파일하는 JDO 쿼리를 모델로한다. `execute(...)`, `update(...)`, `findObject(...)` 메서드들을 사용하면 다양한 파라미터 값으로 여러번 호출될 수 있다.
 
 ## JdbcTemplate 사용
@@ -158,7 +158,7 @@ this.jdbcTemplate.update(
 
 `JdbcTemplate`클래스의 인스턴스는 스레드로부터 안전하다. 이 말은 `JdbcTemplate`의 인스턴스를 하나만 구성하고 여러 개의 DAO에 주입하는 인스턴스를 공유해도 문제가 없다는 의미다. `JdbcTemplate` 는 상태 보존적이다. 따라서 DataSource의 참조를 유지한다.
 
-`JdbcTemplate` 클래스를 사용할 때 일반적인 관행은 `DataSource`빈을 DAO 클래스에 주입하는 형태다.
+`JdbcTemplate` 클래스를 사용할 때 일반적인 관행은 `DataSource`빈을 DAO 클래스에 주입하는 형태다. `DataSource`만 있으면 다른 JDBC 객체도 만들 수 있기 때문이다.
 
 ```java
 public class JdbcCorporateEventDao implements CorporateEventDao {

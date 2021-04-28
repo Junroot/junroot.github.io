@@ -418,7 +418,7 @@ public class SimpleController {
 }
 ```
 
-`IOException`과 같이 예외의 타입으로 처리하고자 하는 에외를 제한할 수 있다. 또는 아래와 같이 어노테이션을 이용할 수도 있다.
+`IOException`과 같이 예외의 타입으로 처리하고자 하는 예외를 제한할 수 있다. 또는 아래와 같이 어노테이션을 이용할 수도 있다.
 
 ```java
 @ExceptionHandler({FileSystemException.class, RemoteException.class})
