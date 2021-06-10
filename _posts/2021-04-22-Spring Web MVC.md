@@ -235,7 +235,7 @@ public void handle(@CookieValue("JSESSIONID") String cookie) {
 
 ### Model
 
-메서드 인자에 `@ModelAttribute` 붙이면 모델의 attribute에 접근하거나 존재하지 않는 경우 인스턴스화 되도록한다. 
+메서드 인자에 `@ModelAttribute` 붙이면 모델의 attribute에 접근하거나 존재하지 않는 경우 인스턴스화 되도록한다. 또한 `@ModelAttribute`가 붙은 모델은 별도의 설정없이도 자동으로 뷰에 전달된다. `@RequestParam`를 사용하면 리퀘스트 파라미터의 개수가 늘어날 때마다, 컨트롤러와 서비스 메서드의 파라미터를 매번 수정해줘야되기 떄문에, `@ModelAttribute`를 사용하는 편이 효율적이다.
 
 ```java
 @PostMapping("/owners/{ownerId}/pets/{petId}/edit")
