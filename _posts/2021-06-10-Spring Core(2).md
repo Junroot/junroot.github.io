@@ -21,6 +21,20 @@ tags: Spring
 
 `ApplicationContext` 또는 `BeanFactory`가 IoC를 적용하기 위해 사용하는 메타정보를 말한다. 컨테이너에 어떤 기능을 세팅하거나 조정하는 경우에도 사용하지만, IoC 컨테이너의 의해 관리되는 빈을 생성하고 구성할 떄 사용된다.
 
+## Spring Bean Scope
+
+Spring은 기본적으로 모든 Bean을 singletone으로 생성하여 관리한다. 따라서, 일반적으로 우리가 주입받은 Bean은 같은 객체라고 믿을 수 있었다. 하지만 singleton 뿐만 아니라 다른 Scope도 존재한다.
+
+|Scope|설명|
+|--|---------|
+|singletone|하나의 Bean 정의에 대해서 Spring IoC 컨테이너 내에 하나의 객체만 존재한다.|
+|prototype|하나의 Bean 정의에 다수의 객체가 존재할 수 있다.|
+|request|하나의 HTTP 요청에 하나의 Bean 객체가 존재할 수 있다.|
+|session|하나의 HTTP session에 하나의 Bean 객체가 존재할 수 있다.|
+|application|하나의 `ServletContext`에 하나의 Bean 객체가 존재할 수 있다.|
+|websocket|하나의 `WebSocket`에 하나의 Bean 객체가 존재할 수 있다.|
+
+
 ## 참고 자료
 
 <https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#spring-core>
