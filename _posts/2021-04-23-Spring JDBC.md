@@ -6,7 +6,18 @@ tags: Java Spring
 
 Spring JDBC 는 JDBC를 사용할 때 개발자가 처리해야되는 것의 일부를 대신 처리해준다.
 
-[Spring DCBC - 누가 무엇을 하는가](https://www.notion.so/cdf6aa58cd964d86a8149b3b73768037)
+|동작|Spring JDBC|You|
+|----|--|--|
+|connection parameters 정의| |x|
+|connection 열기|x| |	
+|SQL statement 명시| |x|
+|파라미터 선언 및 파라미터의 값 제공| |x|
+|statement 준비 및 실행|x| |	
+|결과를 iterate하도록 루프 설정|x| |	
+|iteration에 대한 작업|	|x|
+|예외 처리|x| |	
+|트랜잭션 처리|x| |	
+|connection, statement, resultset 닫기|x| |
 
 ## JDBC 데이터베이스 엑세스를 위한 접근법 선택
 
