@@ -226,7 +226,7 @@ public class WebConfig implements WebMvcConfigurer {
 }
 ```
 
-`/` 서블릿 매핑을 오버라이딩 할 때 주의할 점은 디폴트 서블릿인 경로가 아닌 이름으로 검색이 된다는 점이다. `DefaultservletHttpRequestHandler`는 시작시 대부분의 주요 서블릿 컨테이너(Tomcat, Jety, GlassFish, JBoss, Resin, WebLogic, WebSpehre)에 알려진 이름 목록을 사용하여 컨테이너에 대한 디폴트 서블릿을 자동으로 탐지한다. 디폴트 서블릿 이름을 알 수 없는 다른 서믈릿 컨테이너를 사용할 경우, 아래와 같이 기본 서블릿 이름을 명시해야된다.
+`/` 서블릿 매핑을 오버라이딩 할 때 주의할 점은 디폴트 서블릿인 경로가 아닌 이름으로 검색이 된다는 점이다. `DefaultservletHttpRequestHandler`는 시작시 대부분의 주요 서블릿 컨테이너(Tomcat, Jety, GlassFish, JBoss, Resin, WebLogic, WebSpehre)에 알려진 이름 목록을 사용하여 컨테이너에 대한 디폴트 서블릿을 자동으로 탐지한다. 디폴트 서블릿 이름을 알 수 없는 다른 서블릿 컨테이너를 사용할 경우, 아래와 같이 기본 서블릿 이름을 명시해야된다.
 
 ```java
 @Configuration
