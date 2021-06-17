@@ -212,7 +212,7 @@ public class WebConfig implements WebMvcConfigurer {
 
 ## Default Servlet
 
-Spring MVC는 `DispatcherServlet`을 `/`에 매핑(컨테이너의 디폴트 서블릿의 매핑을 무시)하는 동시에 컨테이너의 기본 서블릿에 의해 정적 리소스 요청이 처리되도록 해준다. 이는 `DefaultServletHttpRequestHandler`가 `/**` URL 매핑에 가장 낮은 우선순위로 지정되도록 구성해준다.
+Spring MVC는 `DispatcherServlet`을 `/`에 매핑(컨테이너의 디폴트 서블릿의 매핑을 무시)하는 동시에 컨테이너의 기본 서블릿에 의해 정적 리소스 요청이 처리되도록 해준다. 아래 코드는 `DefaultServletHttpRequestHandler`가 `/**` URL 매핑에 가장 낮은 우선순위로 지정되도록 구성해준다.
 
 ```java
 @Configuration
