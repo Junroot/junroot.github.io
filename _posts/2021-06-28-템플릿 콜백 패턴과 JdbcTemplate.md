@@ -2,7 +2,6 @@
 title:  "템플릿 콜백 패턴과 JdbcTempalte"
 categories: programming
 tags: Java Spring
-hidden: true
 ---
 
 ## 템플릿 콜백 패턴
