@@ -57,8 +57,6 @@ TestContext Framework는 `abstract` 통합 테스트를 단순화 하기위해 �
 
 ## 어노테이션
 
-### Spring 테스트 어노테이션
-
 ### `@ContextConfiguration`
 
 테스트에서 `ApplicationContext`를 어떻게 로드하고 구성할 것인지 결정하는 클래스 수준 메타 데이터를 정의한다. 이 어노테이션은 컨텍스트를 로드하는데 사용되는 애플리케이션 컨텍스트 리소스(`locations`) 또는 컴포넌트(`classes`)를 선언한다.
@@ -99,7 +97,7 @@ class CustomLoaderXmlApplicationContextTests {
 }
 ```
 
-#### `@ContextHierarchy`
+### `@ContextHierarchy`
 
 클래스 수준 어노테이션이다. 테스트 할 때 `ApplicationContext` 인스턴스의 계층을 선언할 수 있다. 아래는 하나의 테스트 클래스에서 사용하는 예시다. `@ContextHierarchy`는 테스트 클래스 계층안에서도 사용이 가능하다.
 
@@ -115,7 +113,7 @@ class ContextHierarchyTests {
 
 만약 테스트 클래스 계층 안에서 컨텍스트 계층 수준의 configuration을 오버라이드하려면 같은 `name`속성을 명시하여 지정할 수 있다.
 
-#### `@ActiveProfiles`
+### `@ActiveProfiles`
 
 클래스 수준 어노테이션이다. `ApplicationContext`를 로드할 때 어떤 Bean 정의 프로필이 active 일지 선언하기위해 사용한다.
 
@@ -139,7 +137,7 @@ class DeveloperIntegrationTests {
 }
 ```
 
-#### `@TestPropertySource`
+### `@TestPropertySource`
 
 클래스 수준 어노테이션이다. `ApplicationContext`의 `Environment`에서 `PropertySources` 집합에 추가할 properties 파일이나 inlined properties를 설정할 때 사용한다.
 
@@ -163,7 +161,7 @@ class MyIntegrationTests {
 }
 ```
 
-#### `@DynamicPropertySource`
+### `@DynamicPropertySource`
 
 메서드 수준 어노테이션이다. `ApplicationContext`의 `Environment`에서 `PropertySources` 집합에 추가할 properties를 동적으로 등록할 수 있다. 동적 properties는 properties를 미리 모르는 경우에 유용하다.
 
@@ -184,7 +182,7 @@ class MyIntegrationTests {
 }
 ```
 
-#### `@DirtiesContext`
+### `@DirtiesContext`
 
 `ApplicationContext`가 테스트를 실행하는 동안 더럽혀 졌음을 나타낸다. `ApplicationContext`가 더티로 표시되면 테스트 프레임워크의 캐시가 지워지고 닫힌다. 결과적으로 기존 Spring 컨테이너는 동일한 configuration 메타데이터가 있는 컨텍스트를 필요하면 새로 빌드를 한다.
 
@@ -256,7 +254,7 @@ class ExtendedTests extends BaseTests {
 }
 ```
 
-#### `@TestExecutionListeners`
+### `@TestExecutionListeners`
 
 `TestContextManager`에 등록해야 하는 `TestExecutionListener`의 구현을 구성하기 위한 클래스 레벨 메타데이터를 정의한다. 일반적으로 `@TestExecutionListener`는 `@ContextConfiguration`과 함께 사용한다.
 
@@ -269,13 +267,13 @@ class CustomTestExecutionListenerTests {
 }
 ```
 
-#### `@RecordApplicationEvents`
+### `@RecordApplicationEvents`
 
 클래스 수준 어노테이션이다. 하나의 테스트를 실행하는 중에 발생한 모든 애플리케이션 이벤트를 기록하도록 Spring TestContext 프레임워크에 지시하는데 사용된다.
 
 기록된 이벤트는 테스트 안에서 `ApplicationEvents` API를 통해 접근할 수 있다.
 
-#### `@Commit`
+### `@Commit`
 
 트랜잭션 테스트 메서드에서 테스트 메서드가 완료된 후 트랜잭션이 커밋되는 것을 나타내는 어노테이션이다. `@Rollback(false)`를 대체하여 코드의 의도를 더 명확하게 나타낼 수 있다.
 
@@ -287,7 +285,7 @@ void testProcessWithoutRollback() {
 }
 ```
 
-#### `@Rollback`
+### `@Rollback`
 
 테스트 메서드가 완료된 후 트랜젝션을 롤백해야하는지 여부를 나타낸다. `true`인 경우 롤백되고 아니면 커밋된다. 명시적으로 선언되지 않으면 기본값은 `true`로 롤백된다.
 
@@ -301,7 +299,7 @@ void testProcessWithoutRollback() {
 }
 ```
 
-#### `@BeforeTransaction`
+### `@BeforeTransaction`
 
 `@Transaction` 주석을 사용하여 트랜잭션 내에서 실행되는 테스트 메서드를 실행하기 전에 `@BeforeTransaction`이 달린 메서드를 먼저 실행한다.
 
@@ -312,7 +310,7 @@ void beforeTransaction() {
 }
 ```
 
-#### `@AfterTransaction`
+### `@AfterTransaction`
 
 `@Transaction` 주석을 사용하여 트랜잭션 내에서 실행되는 테스트 메서드를 실행한 후에 `@AfterTransaction`이 달린 메서드를 실행한다.
 
@@ -323,7 +321,7 @@ void afterTransaction() {
 }
 ```
 
-#### `@Sql`
+### `@Sql`
 
 테스트 클래스 또는 테스트 메서드에 주석을 명시할 수 있다. 테스트 클래스에 명시할 경우 각 테스트 메서드 이전에 실행된다.
 
@@ -335,7 +333,7 @@ void userTest() {
 }
 ```
 
-#### `@SqlConfig`
+### `@SqlConfig`
 
 `@Sql`로 구성된 SQL 스크립트를 파싱하고 실행하는 방법을 결정하는데 사용하는 메타데이터를 정의한다. 
 
@@ -352,7 +350,7 @@ void userTest() {
 }
 ```
 
-#### `@SqlMergeMode`
+### `@SqlMergeMode`
 
 메서드 수준 `@Sql`선언과 클래스 수준 `@Sql`선언이 합쳐지는지 여부를 지정할 수 있다. 명시하지 않은 경우는 `OVERRIDE` 모드가 사용된다. `OVERRIDE`모드는 메서드 수준 `@Sql`선언이 클래스 수준 `@Sql`선언을 효율적으로 재정의한다.
 
@@ -390,7 +388,7 @@ class UserTests {
 }
 ```
 
-#### `@SqlGroup`
+### `@SqlGroup`
 
 여러 `@Sql` 어노테이션을 집계하는 컨테이너 어노테이션이다. Java 8의 경우는 Repeatable Annotations 때문에 선택적으로 사용하게된다. 여기서 `@Sql`은 동일한 클래스 또는 메서드에서 여러번 선언되어 이 컨테이너 어노테이션을 생성할 수 있다.
 
