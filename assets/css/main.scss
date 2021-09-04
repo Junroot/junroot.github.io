@@ -9,8 +9,12 @@ p>code, a>code, li>code, figcaption>code, td>code {
     background: #263238;
 }
 
-.list__item:hover .gw-repo:hover {
-    background-color: rgba($color: #000000, $alpha: 0.13);
+.list__item:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.gw-repo:hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .nav__list > label {
