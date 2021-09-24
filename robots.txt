@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://junroot.github.io/post-sitemap.xml
+Sitemap: https://junroot.github.io/sitemap.xml

@@ -426,7 +426,7 @@ public class MovieRecommender {
     private final Map<String, Integer> countOfMoviesPerCatalog;
 
     public MovieRecommender(
-            @Value("#{{'Thriller': 100, 'Comedy': 300}}") Map<String, Integer> countOfMoviesPerCatalog) {
+        @Value("#{{'Thriller': 100, 'Comedy': 300}}") Map<String, Integer> countOfMoviesPerCatalog) {
         this.countOfMoviesPerCatalog = countOfMoviesPerCatalog;
     }
 }
